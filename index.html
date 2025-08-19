@@ -3,31 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>index</title>
   </head>
   <body>
-    <form id="checkbox_box_toggle_async_optimization">
-      <label for="async_optimization__macro"
-        >비동기 최적화(setTimeout - macrotask)</label
-      >
-      <input
-        id="async_optimization__macro"
-        class="toggle"
-        name="task_type"
-        value="macro"
-        type="radio"
-      />
-      <label for="async_optimization__micro"
-        >비동기 최적화(promise - microtask)</label
-      >
-      <input id="async_optimization__micro" class="toggle" name="task_type"
-      value="micro" type="radio" / >
-    </form>
-
-    <button id="button_recursive">무거운 재귀 작업 테스트</button>
-    <button id="button_loof">무거운 반복 작업 테스트</button>
-    <button id="button_count_add">콘솔 출력 반응 테스트</button>
-    <div id="count_console"></div>
-    <script src="./app.js"></script>
+    <!-- 공용 -->
+    <header id="header">
+      <nav id="route-menu">
+        <ul>
+          <li>
+            <a
+              href="page/optimize-all-devide-async/optimize-all-devide-async.html"
+              >비동기 최적화</a
+            >
+          </li>
+          <li>
+            <a href="page/sync/sync.html">동기적 재귀, 반복</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  -->
   </body>
 </html>
