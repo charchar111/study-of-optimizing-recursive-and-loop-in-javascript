@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>optiomize-chunk</title>
+    <title>overhead-test-all-devide-async-vs-chunk</title>
   </head>
   <body>
     <!-- 공용 -->
@@ -34,41 +34,37 @@
       </nav>
     </header>
     <!--  -->
-    <form id="checkbox_box_toggle_async_optimization">
-      <label for="async_optimization__chunk-time-sliced">시간 기반 청크</label>
-      <input
-        id="async_optimization__chunk-time-sliced"
-        class="toggle"
-        name="task_type"
-        value="time-sliced"
-        type="radio"
-      />
-      <label for="async_optimization__chunk-count-based"
-        >작업 개수 기반 청크</label
-      >
-      <input
-        id="async_optimization__chunk-count-based"
-        class="toggle"
-        name="task_type"
-        value="count-based"
-        type="radio"
-      />
 
-      <label for="async_optimization__no">최적화 없음</label>
+    <form id="checkbox_box_toggle_loof_type">
+      <p>반복 작업 타입</p>
+      <label for="loof_type__recursive">재귀 함수(recursive)</label>
       <input
-        checked
-        id="async_optimization__no"
+        id="loof_type__recursive"
         class="toggle"
-        name="task_type"
-        value=""
+        name="loof_type"
+        value="recursive"
+        type="radio"
+      />
+      <label for="loof_type__loof">반복문(for,while)</label>
+      <input
+        id="loof_type__loof"
+        class="toggle"
+        name="loof_type"
+        value="loof"
         type="radio"
       />
     </form>
 
-    <button id="button_recursive">무거운 재귀 작업 테스트</button>
-    <button id="button_loof">무거운 반복 작업 테스트</button>
-    <button id="button_count_add">이벤트 반응 테스트(카운터)</button>
-    <div id="count_console"></div>
-    <script src="./optiomize-chunk.js"></script>
+    <button id="button__perfomance_test_async_unit_devide">
+      1개 단위 비동기 분할 성능 측정
+    </button>
+    <button id="button__perfomance_test_size_based_chunk">
+      개수 단위(1000개) 청크 전략 성능 측정
+    </button>
+    <button id="button__perfomance_test_time_based_chunk">
+      시간 단위(16ms) 청크 전략 성능 측정
+    </button>
+
+    <script src="./overhead-test-all-devide-async-vs-chunk.js"></script>
   </body>
 </html>

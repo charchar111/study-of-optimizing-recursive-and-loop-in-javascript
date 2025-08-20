@@ -11,3 +11,15 @@ index.html 테스트를 위한 라우트로 이동 가능합니다.
 라우트를 열면 각 무거운 작업을 실행할 수 있는 버튼이 있고 최적화 모드를 활성화할 수 있습니다.
 
 무거운 작업 실행 후, 옆에 카운터 버튼을 클릭하여 브라우저 렌더링과 이벤트 반응 여부를 확인합니다.
+
+# 각 테스트 설명
+
+## sync
+
+## optimize-all-devide-async
+
+## optiomize-chunk
+
+## overhead-test-all-devide-async-vs-chunk
+
+## webworker
