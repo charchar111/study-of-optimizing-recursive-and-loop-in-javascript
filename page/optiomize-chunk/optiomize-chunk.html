@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sync</title>
+    <title>optiomize-chunk</title>
   </head>
   <body>
     <!-- 공용 -->
@@ -27,11 +27,41 @@
       </nav>
     </header>
     <!--  -->
+    <form id="checkbox_box_toggle_async_optimization">
+      <label for="async_optimization__chunk-time-sliced">시간 기반 청크</label>
+      <input
+        id="async_optimization__chunk-time-sliced"
+        class="toggle"
+        name="task_type"
+        value="time-sliced"
+        type="radio"
+      />
+      <label for="async_optimization__chunk-count-based"
+        >작업 개수 기반 청크</label
+      >
+      <input
+        id="async_optimization__chunk-count-based"
+        class="toggle"
+        name="task_type"
+        value="count-based"
+        type="radio"
+      />
+
+      <label for="async_optimization__no">최적화 없음</label>
+      <input
+        checked
+        id="async_optimization__no"
+        class="toggle"
+        name="task_type"
+        value=""
+        type="radio"
+      />
+    </form>
 
     <button id="button_recursive">무거운 재귀 작업 테스트</button>
     <button id="button_loof">무거운 반복 작업 테스트</button>
     <button id="button_count_add">이벤트 반응 테스트(카운터)</button>
     <div id="count_console"></div>
-    <script src="./sync-app.js"></script>
+    <script src="./optiomize-chunk.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 let count = 0;
+const loofCount = 10000;
 
 // 카운터 로직
 // trigger - 버튼 클릭
@@ -29,7 +30,7 @@ let count = 0;
     else return;
   }
 
-  buttonRecursive.addEventListener("click", () => syncRecursive(3000));
+  buttonRecursive.addEventListener("click", () => syncRecursive(loofCount));
 })();
 
 // 버튼 - 무거운 반복 작업 테스트
@@ -48,5 +49,5 @@ let count = 0;
       else break;
     }
   }
-  buttonLoof.addEventListener("click", () => syncLoof(3000));
+  buttonLoof.addEventListener("click", () => syncLoof(loofCount));
 })();
