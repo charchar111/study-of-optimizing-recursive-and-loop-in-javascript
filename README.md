@@ -4,6 +4,8 @@
 
 이 프로젝트는 그 최적화 방법을 위한 실험 코드입니다.
 
+<a href="https://charchar111.github.io/study-of-optimizing-recursive-and-loop-in-javascript/src">테스트 페이지 링크</a>
+
 # 실행 방법
 
 다음 명령어를 실행하여 정적 서버를 엽니다.
