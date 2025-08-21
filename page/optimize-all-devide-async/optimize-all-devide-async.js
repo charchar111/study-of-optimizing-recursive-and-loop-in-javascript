@@ -1,4 +1,3 @@
-let count = 0;
 const loofCount = 10000;
 
 const checkboxToggleAsyncOptimization = document.querySelector(
@@ -14,6 +13,8 @@ function getCheckboxToggleAsyncOptimization() {
 // action - 카운트 증가, 콘솔 출력
 // render - 카운트 증가 값 출력
 (function initButtonCountAdd() {
+  let count = 0;
+
   const buttonCountAdd = document.querySelector("#button_count_add");
   const countConsole = document.querySelector("#count_console");
 
