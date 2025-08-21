@@ -1,0 +1,15 @@
+{
+  "name": "study-of-optimizing-recursive-and-loop-in-javascript",
+  "version": "1.0.0",
+  "description": "자바스크립트 내에 무거운 반복문과 재귀문이 브라우저 렌더링, 이벤트 처리 작업을 블락하지 않는 방법에 대해 공부하려고 합니다.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./src -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
